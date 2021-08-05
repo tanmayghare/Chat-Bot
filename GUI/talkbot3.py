@@ -77,7 +77,6 @@ def send():
             #     cursor.execute("INSERT INTO chathistory (Cia) VALUES (%s) ON DUPLICATE KEY UPDATE Username=%s",(fact,name))
             #     cursor.execute("UPDATE chathistory SET Frequency = Frequency + 1 where Name =%s",(name,))
             #     print("Cia: "+fact)
-
         if 'games' in msg or 'Games' in msg or 'game' in msg:
             games()
             cursor.execute("UPDATE chathistory SET Frequency = Frequency + 1 where Name =%s",(name,))
